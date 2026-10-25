@@ -13,9 +13,16 @@
 <meta name="description" content="A demonstration of inline CSS using font families, text sizes, font weights, and different color methods.">
 </head>
 <body>
-    <header>
-    <h1>Applying Inline CSS</h1>
-    <p>Every day is an opportunity to learn something new.</p>
+    <header style="text-align: center;">
+    <!-- If Arial is unavailable, the browser tries Helvetica.
+         If neither is available, it uses an available sans-serif font. -->
+    <h1 style="color: #315754; font-size: 36px; font-family: Arial, Helvetica, sans-serif;">Applying Inline CSS</h1>
+
+    <!-- Font-weight accepts absolute keywords such as normal and bold,
+         relative keywords such as lighter and bolder, and numeric values
+         such as 400 and 700. -->
+    <p style="font-weight: bold;">Every day is an opportunity to learn something new.</p>
+
     <!--
     <nav>
         <a href="#">Placeholder Link</a>
@@ -23,22 +30,24 @@
     -->
     </header>
     <main>
-    <h2>Generic Font Families</h2>
-    <p>Generic font families group fonts by their appearance. Serif fonts
+    <h2 style="color: darkgreen;">Generic Font Families</h2>
+    <p style="font: 1.2em Arial, Helvetica, sans-serif;">
+        Generic font families group fonts by their appearance. Serif fonts
         have small strokes at the ends of letters, while sans-serif fonts
         do not. Monospace fonts give every character the same width.
         Cursive fonts resemble handwriting, while fantasy fonts have
         decorative designs.</p>
 
-    <h2>CSS Color Methods</h2>
-    <p>CSS colors can be specified using color names, hexadecimal codes,
+    <h2 style="color: rgb(49, 87, 84);">CSS Color Methods</h2>
+    <p style="font: italic 20px 'Courier New', Courier, monospace;">
+        CSS colors can be specified using color names, hexadecimal codes,
         or RGB values. Color names use words such as blue. Hexadecimal
         codes begin with a hash symbol and use hexadecimal digits to
         represent red, green, and blue components, such as #0000FF.
         RGB notation specifies the amounts of red, green, and blue,
         such as rgb(0, 0, 255). These three examples all represent blue.</p>
     </main>
-    <footer>
+    <footer style="text-align: right;">
     <p><small>Copyright by Khadeejah Hussain &copy; 2026</small></p>
     </footer>
 </body>
